@@ -1,4 +1,112 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* This is shared part */
+.btn-primary{
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 600px;
+    cursor: pointer;
+}
+
+
+/* This is Navigation Part */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    te
+}
+
+nav li>a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.nav-title {
+    color: var(--dark-01, #131313);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Banner Section */
+.banner-title {
+    color: var(--dark-01, #131313);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-content {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-description {
+    color: var(--dark-03, #727272);
+    font-size: .8rem;
+    font-weight: 400;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* Responsive Task */
+/* for mini device */
+@media screen and (max-width: 576px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    nav>ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .banner-content {
+        width: 350px;
+    }
+    header {
+        background: rgba(255, 144, 14, 0.10);
+        padding: 20px;
+    }
+}
+/* For medium size device */
+@media screen and (min-width: 576px) and (max-width: 999px) {
+    .banner-content{
+        width: 400px;
+    }
+    .banner img {
+        margin-top: 20px;
+        width: 150%;
+    }
+    header {
+        background: rgba(255, 144, 14, 0.10);
+        padding: 20px;
 }
