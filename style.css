@@ -5,7 +5,7 @@
 }
 
 /* This is shared part */
-.btn-primary{
+.btn-primary {
     padding: 10px 15px;
     border-radius: 8px;
     background: #FF900E;
@@ -15,6 +15,7 @@
     font-weight: 600px;
     cursor: pointer;
 }
+
 
 
 /* This is Navigation Part */
@@ -70,9 +71,41 @@ nav li>a {
     font-size: .8rem;
     font-weight: 400;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
+}
+
+/* This is Feature Section */
+.team-container {
+    margin: 85px 240px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 50%;
+    margin-right: 75px;
+}
+
+.t-image {
+    width: 200px;
+}
+
+.span-color {
+    color: var(--dark-03, #727272);
+    font-weight: 700;
+}
+
+.span-color2 {
+    color: #FF900E;
+    font-weight: 700;
 }
 
 
@@ -82,31 +115,56 @@ nav li>a {
     .nav {
         display: flex;
         flex-direction: column;
-        
+
     }
+
     nav>ul {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
+
     .banner-content {
         width: 350px;
     }
+
     header {
         background: rgba(255, 144, 14, 0.10);
         padding: 20px;
     }
+    .team-images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+    }
+    .t-image {
+        width: 350px;
+    }
+    .team-container {
+        margin: 0px;
+        background: #FFF;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
 /* For medium size device */
 @media screen and (min-width: 576px) and (max-width: 999px) {
-    .banner-content{
+    .banner-content {
         width: 400px;
     }
+
     .banner img {
         margin-top: 20px;
         width: 150%;
     }
+
     header {
         background: rgba(255, 144, 14, 0.10);
         padding: 20px;
+    }
+
+    
 }
